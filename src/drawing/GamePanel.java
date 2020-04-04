@@ -2,6 +2,7 @@ package drawing;
 
 import controll.KeyBoardLis;
 import controll.PathControll;
+import mazeDataStructure.Junction;
 import mazeDataStructure.JunctionFactory;
 import mazeDataStructure.Maze;
 import mazeDataStructure.SearchAlgorithm;
@@ -9,36 +10,21 @@ import model.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashMap;
 
 public class GamePanel extends JPanel {
 
     private IGhost red;
     private IGhost pink;
     private IPacMan pacMan;
-    private Maze maze;
     private PathControll pathControll;
 
-
-    public GamePanel() {
-
-        JunctionFactory junctionFac = new JunctionFactory();
+    public GamePanel(HashMap<String, Entity> entityHashMap) {
         pathControll = new PathControll();
-        this.maze = junctionFac.getMaze();
-        SearchAlgorithm search = new SearchAlgorithm(maze);
-        pacMan = new PacMan(new Position(100, 70, maze.getJunctionHashMap().get("n27"), maze.getJunctionHashMap().get("n28")));
-        Position pos = new Position(25, 55, maze.getJunctionHashMap().get("n10"), maze.getJunctionHashMap().get("n10"));
-        red = new Ghost(pos, GhostType.RED, search, pacMan);
-        Position pos2 = new Position(10, 70, maze.getJunctionHashMap().get("n7"), maze.getJunctionHashMap().get("n7"));
-        pink = new Ghost(pos2, GhostType.PINK, search, pacMan);
 
-
-        JFrame frame = new JFrame();
-        frame.add(this);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocation(1200, 100);
-        frame.setSize(800, 600);
-        frame.addKeyListener(new KeyBoardLis(pacMan));
-        frame.setVisible(true);
+        pacMan = (IPacMan) entityHashMap.get("pacman");
+        red = (IGhost) entityHashMap.get("red");
+        pink = (IGhost) entityHashMap.get("pink");
     }
 
 
@@ -61,14 +47,19 @@ public class GamePanel extends JPanel {
         pathControll.setPathGhost(pink);
         pathControll.setPathPacMan(pacMan);
 
+//        red.update();
+        pacMan.update();
+
+        if(!(new Rectangle(red.getPositionOfEntity().getX(),red.getPositionOfEntity().getY(),5,5).intersects(new Rectangle(pink.getPositionOfEntity().getX(),pink.getPositionOfEntity().getY(),5,5)))){
+//            pink.update();
+        }
+
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        pink.update();
-        red.update();
-        pacMan.update();
+
         graphics2D.setColor(Color.MAGENTA);
         pink.show(graphics2D);
         graphics2D.setColor(Color.RED);
@@ -150,7 +141,4 @@ public class GamePanel extends JPanel {
         graphics2D.fillRect(95, 5, 5, 23);
     }
 
-    public static void main(String[] args) {
-        GamePanel gamePanel = new GamePanel();
-    }
 }

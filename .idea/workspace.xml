@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3993d4c3-ccb4-460a-8084-78e73c66154d" name="Default Changelist" comment="" />
+    <list default="true" id="3993d4c3-ccb4-460a-8084-78e73c66154d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StartGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controll/SetUpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawing/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drawing/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/PacMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PacMan.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1a21xF6gfByX8PH0wfvAOaYCqp7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,8 +35,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StartGame">
     <configuration name="GamePanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="drawing.GamePanel" />
       <module name="Pac-Man" />
@@ -39,8 +52,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartGame" />
+      <module name="Pac-Man" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartGame" />
         <item itemvalue="Application.GamePanel" />
       </list>
     </recent_temporary>
@@ -59,42 +80,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2134" y="313" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1585943414216">
+    <state x="2134" y="313" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1585996803596">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state x="2134" y="313" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585943414216" />
-    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1585951881499">
+    <state x="2134" y="313" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585996803596" />
+    <state x="1842" y="70" width="958" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585993924293">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585951881499" />
-    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1585951881499">
+    <state x="1842" y="70" width="958" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585993924293" />
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1586003378305">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.center/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585951881499" />
-    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1585951881499">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586003378305" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1586003378305">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.left/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585951881499" />
-    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1585951881499">
+    <state width="1874" height="287" key="GridCell.Tab.0.center/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586003378305" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1586003378305">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.right/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585951881499" />
-    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1585950569395">
+    <state width="1874" height="287" key="GridCell.Tab.0.left/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586003378305" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1586003378305">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585950569395" />
-    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1585950569395">
+    <state width="1874" height="287" key="GridCell.Tab.0.right/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586003378305" />
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1586002003232">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.center/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585950569395" />
-    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1585950569395">
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586002003232" />
+    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1586002003232">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.left/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585950569395" />
-    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1585950569395">
+    <state width="1874" height="354" key="GridCell.Tab.1.center/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586002003232" />
+    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1586002003231">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.right/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585950569395" />
+    <state width="1874" height="354" key="GridCell.Tab.1.left/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586002003231" />
+    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1586002003232">
+      <screen x="1366" y="70" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.1.right/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586002003232" />
     <state x="1982" y="436" key="com.intellij.ide.util.TipDialog" timestamp="1585936040569">
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
