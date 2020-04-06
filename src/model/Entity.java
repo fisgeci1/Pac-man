@@ -28,6 +28,10 @@ public class Entity {
         positionOfEntity.setY(y);
     }
 
+    public void setSpeed(int speed) {
+        moveDirection.setSpeed(speed);
+    }
+
     public void updatePosition(int x, int y, Junction nextJunction) {
         updatePosition(x, y);
         positionOfEntity.setCurrentJunction(nextJunction);
@@ -45,6 +49,7 @@ public class Entity {
     public void update() {
         updatePosition(positionOfEntity.getX() + moveDirection.getxDir(), positionOfEntity.getY() + moveDirection.getyDir());
     }
+
     public void show(Graphics2D graphics2D) {
         graphics2D.fillOval(getPositionOfEntity().getX(), getPositionOfEntity().getY(), 5, 5);
     }

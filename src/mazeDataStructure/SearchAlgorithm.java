@@ -43,13 +43,12 @@ public class SearchAlgorithm {
             }
 
             for (Junction neighbour : current.getAllNeighbours()) {
-
                 neighbour.setWeight(pathCost + neighbour.getWeight());
                 if (!queue.contains(neighbour) && !explored.contains(neighbour)) {
                     queue.add(neighbour);
                     neighbour.setParent(current);
                     pathCost += neighbour.getWeight();
-                } else if (queue.contains(neighbour) && (neighbour.getWeight() >= pathCost)) {
+                } else if (queue.contains(neighbour) && (neighbour.getWeight() > pathCost)) {
                     neighbour.setParent(current);
                     current = neighbour;
                     pathCost = neighbour.getWeight();
@@ -67,33 +66,37 @@ public class SearchAlgorithm {
     }
 
     private Direction getDirection(Junction target) {
-        Direction direction = Direction.RIGHT;
+        Direction direction = null;
         List<Junction> path = new ArrayList<>();
         for (Junction node = target; node != null; node = node.getParent()) {
             path.add(node);
         }
 
-        Collections.reverse(path);
-        Junction begining = path.get(0);
-        path.remove(0);
-        Junction secondMove = path.get(0);
+        if (path.size() > 1) {
+            Collections.reverse(path);
+            Junction begining = path.get(0);
+            path.remove(0);
+            Junction secondMove = path.get(0);
 
 
-        if (begining.getxPos() == secondMove.getxPos()) {
-            if (begining.getyPos() - secondMove.getyPos() < 0) {
-                direction = Direction.BOTTOM;
+            if (begining.getxPos() == secondMove.getxPos()) {
+                if (begining.getyPos() - secondMove.getyPos() < 0) {
+                    direction = Direction.BOTTOM;
+                } else {
+                    direction = Direction.TOP;
+                }
             } else {
-                direction = Direction.TOP;
-            }
-        } else {
-            if (begining.getxPos() - secondMove.getxPos() < 0) {
-                direction = Direction.RIGHT;
-            } else {
-                direction = Direction.LEFT;
+                if (begining.getxPos() - secondMove.getxPos() < 0) {
+                    direction = Direction.RIGHT;
+                } else {
+                    direction = Direction.LEFT;
+                }
             }
         }
         return direction;
     }
 
-
+    public Maze getMaze() {
+        return maze;
+    }
 }

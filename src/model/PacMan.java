@@ -135,7 +135,6 @@ public class PacMan extends Entity implements IPacMan {
                 endSign = -1;
                 break;
             case TOP:
-                System.out.println("top");
                 startAngle = 135;
                 endAngle = 270;
                 sign = -1;

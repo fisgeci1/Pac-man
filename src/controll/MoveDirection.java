@@ -50,4 +50,8 @@ public class MoveDirection {
     public int getyDir() {
         return yDir;
     }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 }

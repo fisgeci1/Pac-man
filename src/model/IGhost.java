@@ -13,4 +13,9 @@ public interface IGhost {
     public void show(Graphics2D graphics2D);
 
     public Position getPositionOfEntity();
+
+    public void setReturningToBase(boolean returningToBase);
+
+    public boolean getReturningToBase();
+
 }

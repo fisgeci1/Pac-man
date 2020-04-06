@@ -20,11 +20,12 @@ public class GamePanel extends JPanel {
     private PathControll pathControll;
 
     public GamePanel(HashMap<String, Entity> entityHashMap) {
-        pathControll = new PathControll();
-
         pacMan = (IPacMan) entityHashMap.get("pacman");
         red = (IGhost) entityHashMap.get("red");
         pink = (IGhost) entityHashMap.get("pink");
+
+        pathControll = new PathControll();
+
     }
 
 
@@ -43,15 +44,15 @@ public class GamePanel extends JPanel {
         drawWalls(graphics2D);
 
 
-        pathControll.setPathGhost(red);
-        pathControll.setPathGhost(pink);
+        pathControll.setPathGhost(red, pacMan);
+        pathControll.setPathGhost(pink, pacMan);
         pathControll.setPathPacMan(pacMan);
 
-//        red.update();
+        red.update();
         pacMan.update();
 
-        if(!(new Rectangle(red.getPositionOfEntity().getX(),red.getPositionOfEntity().getY(),5,5).intersects(new Rectangle(pink.getPositionOfEntity().getX(),pink.getPositionOfEntity().getY(),5,5)))){
-//            pink.update();
+        if (!(new Rectangle(red.getPositionOfEntity().getX(), red.getPositionOfEntity().getY(), 5, 5).intersects(new Rectangle(pink.getPositionOfEntity().getX(), pink.getPositionOfEntity().getY(), 5, 5)))) {
+            pink.update();
         }
 
         try {

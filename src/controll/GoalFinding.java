@@ -9,14 +9,20 @@ public class GoalFinding {
     public Junction findEndGoal(Position pacManPosition, GhostType ghostType, MoveType moveType) {
         Junction endGoal = null;
 
-        System.out.println( ghostType);
+        System.out.println(ghostType);
         if (moveType == MoveType.CHASE) {
             switch (ghostType) {
                 case RED:
                     endGoal = pacManPosition.getCurrentJunction();
+                    if (endGoal == null) {
+                        endGoal = pacManPosition.getNextJunction();
+                    }
                     break;
                 case PINK:
                     endGoal = pacManPosition.getNextJunction();
+                    if (endGoal == null) {
+                        endGoal = pacManPosition.getCurrentJunction();
+                    }
                     break;
                 case ORANGE:
                     //random
