@@ -18,4 +18,8 @@ public interface IGhost {
 
     public boolean getReturningToBase();
 
+    public MoveType getMoveType();
+
+    public void setMoveType(MoveType moveType);
+
 }

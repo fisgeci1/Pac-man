@@ -1,15 +1,21 @@
 package controll;
 
 import mazeDataStructure.Junction;
+import mazeDataStructure.Maze;
 import model.*;
 
 public class GoalFinding {
 
+    private Maze maze;
 
-    public Junction findEndGoal(Position pacManPosition, GhostType ghostType, MoveType moveType) {
+
+    public GoalFinding(Maze maze) {
+        this.maze = maze;
+    }
+
+    public Junction findEndGoal(Position pacManPosition, Position ghostPosition, GhostType ghostType, MoveType moveType) {
         Junction endGoal = null;
 
-        System.out.println(ghostType);
         if (moveType == MoveType.CHASE) {
             switch (ghostType) {
                 case RED:
@@ -34,16 +40,28 @@ public class GoalFinding {
         } else if (moveType == MoveType.SCATTER) {
             switch (ghostType) {
                 case RED:
+                    endGoal = maze.getJunctionHashMap().get("n34");
+                    if (ghostPosition.getCurrentJunction() == endGoal) {
+                        endGoal = maze.getJunctionHashMap().get("n33");
+                    }
                     break;
                 case PINK:
+                    endGoal = maze.getJunctionHashMap().get("n1");
+                    if (ghostPosition.getCurrentJunction() == endGoal) {
+                        endGoal = maze.getJunctionHashMap().get("n2");
+                    }
                     break;
                 case ORANGE:
                     break;
                 case BLUE:
                     break;
             }
-        } else {
-            // go to spawn
+        } else if (moveType == MoveType.FLEA) {
+
+            int random = (int) (Math.random() * 33 + 1);
+
+            endGoal = maze.getJunctionHashMap().get("n" + random);
+
         }
 
         return endGoal;

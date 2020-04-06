@@ -1,8 +1,9 @@
 package model;
 
 import java.awt.*;
+import java.awt.geom.Ellipse2D;
 
-public class Dots extends Rectangle {
+public class Dots extends Ellipse2D.Double {
 
     private int xPos, yPos, size;
     private boolean eaten = false;
@@ -23,4 +24,3 @@ public class Dots extends Rectangle {
         return eaten;
     }
 }
-r

@@ -10,7 +10,7 @@ public class Ghost extends Entity implements IGhost {
 
     private GhostType ghostType;
     private IPacMan pacMan;
-    private MoveType moveType = MoveType.CHASE;
+    private MoveType moveType = MoveType.SCATTER;
     private SearchAlgorithm searchAlgorithm;
     private boolean isReturningToBase = false;
     private boolean alligned = false;
@@ -24,10 +24,10 @@ public class Ghost extends Entity implements IGhost {
 
     public Direction calculatePath() {
         Direction direction = Direction.LEFT;
-        GoalFinding goalFinding = new GoalFinding();
+        GoalFinding goalFinding = new GoalFinding(searchAlgorithm.getMaze());
 
         if (!isReturningToBase) {
-            Junction goalJunction = goalFinding.findEndGoal(pacMan.getPositionOfEntity(), ghostType, moveType);
+            Junction goalJunction = goalFinding.findEndGoal(pacMan.getPositionOfEntity(), getPositionOfEntity(), ghostType, moveType);
             setSpeed(1);
             alligned = false;
             direction = searchAlgorithm.uniformCostSearch(getPositionOfEntity().getCurrentJunction(), goalJunction);
@@ -79,6 +79,7 @@ public class Ghost extends Entity implements IGhost {
 
             setDiretcionOfGhost(searchAlgorithm.uniformCostSearch(getPositionOfEntity().getCurrentJunction(), goal));
             if (getPositionOfEntity().getCurrentJunction() == goal) {
+                moveType = MoveType.SCATTER;
                 setReturningToBase(false);
             }
         }
@@ -87,6 +88,9 @@ public class Ghost extends Entity implements IGhost {
         return direction;
     }
 
+    public MoveType getMoveType() {
+        return moveType;
+    }
 
     private void setDiretcionOfGhost(Direction diretcionOfGhost) {
         switch (diretcionOfGhost) {
