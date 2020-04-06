@@ -17,6 +17,7 @@ public class PacMan extends Entity implements IPacMan {
     private int eyeYpos = 2;
     private int sign = 1;
     private int endSign = 1;
+    private int score = 0;
     private MoveDirection moveDirection = new MoveDirection();
 
     public PacMan(Position position) {
@@ -149,5 +150,13 @@ public class PacMan extends Entity implements IPacMan {
     @Override
     public Direction getDirectionQ() {
         return directionQ;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getScore() {
+        return score;
     }
 }

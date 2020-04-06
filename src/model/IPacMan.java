@@ -19,4 +19,8 @@ public interface IPacMan {
     public void setMoveDirection(Direction direction);
 
     public void show(Graphics2D graphics2D);
+
+    public int getScore();
+
+    public void setScore(int score);
 }

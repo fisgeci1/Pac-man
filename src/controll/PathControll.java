@@ -13,6 +13,7 @@ public class PathControll {
     private int moveDecidingCoolDown = 200;
     private int fleaCooldown = 200;
     private IGhost[] ghosts;
+    private int ghostAte = 0;
 
     public PathControll(IGhost[] ghosts) {
         this.ghosts = ghosts;
@@ -31,6 +32,7 @@ public class PathControll {
                 moveDecidingCoolDown = 50;
                 ghosts[0].setMoveType(MoveType.CHASE);
                 ghosts[1].setMoveType(MoveType.CHASE);
+                ghostAte = 0;
             } else if (ghost.getMoveType() == MoveType.FLEA) {
                 fleaCooldown--;
             }
@@ -69,8 +71,10 @@ public class PathControll {
         Rectangle pacManRect = new Rectangle(pacMan.getPositionOfEntity().getX(), pacMan.getPositionOfEntity().getY(), 5, 5);
         Rectangle ghostRect = new Rectangle(ghost.getPositionOfEntity().getX(), ghost.getPositionOfEntity().getY(), 5, 5);
         if (pacManRect.intersects(ghostRect)) {
+
+            ghostAte++;
+            pacMan.setScore(pacMan.getScore() + 10 * ghostAte);
             if (ghost.getMoveType() != MoveType.FLEA) {
-//                System.exit(1);
             }
             return true;
         }
