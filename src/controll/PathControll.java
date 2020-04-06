@@ -29,8 +29,8 @@ public class PathControll {
             if (ghost.getMoveType() == MoveType.FLEA && fleaCooldown == 0) {
                 fleaCooldown = 200;
                 moveDecidingCoolDown = 50;
-                ghosts[0].setMoveType(MoveType.SCATTER);
-                ghosts[1].setMoveType(MoveType.SCATTER);
+                ghosts[0].setMoveType(MoveType.CHASE);
+                ghosts[1].setMoveType(MoveType.CHASE);
             } else if (ghost.getMoveType() == MoveType.FLEA) {
                 fleaCooldown--;
             }
@@ -43,7 +43,7 @@ public class PathControll {
                 ghosts[1].setMoveType(moveType);
 
 
-                moveDecidingCoolDown = (moveType == MoveType.SCATTER) ? 100 : 1000;
+                moveDecidingCoolDown = (moveType == MoveType.SCATTER) ? 50 : 1000;
             }
             moveDecidingCoolDown--;
             if (ghost.getPositionOfEntity().getX() == ghost.getPositionOfEntity().getNextJunction().getxPos() && ghost.getPositionOfEntity().getY() == ghost.getPositionOfEntity().getNextJunction().getyPos()) {
@@ -69,6 +69,9 @@ public class PathControll {
         Rectangle pacManRect = new Rectangle(pacMan.getPositionOfEntity().getX(), pacMan.getPositionOfEntity().getY(), 5, 5);
         Rectangle ghostRect = new Rectangle(ghost.getPositionOfEntity().getX(), ghost.getPositionOfEntity().getY(), 5, 5);
         if (pacManRect.intersects(ghostRect)) {
+            if (ghost.getMoveType() != MoveType.FLEA) {
+//                System.exit(1);
+            }
             return true;
         }
         return false;

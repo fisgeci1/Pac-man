@@ -11,8 +11,6 @@ public class SearchAlgorithm {
     }
 
     public Direction uniformCostSearch(Junction start, Junction endGoal) {
-        List<Direction> path = new ArrayList<>();
-        HashMap<Junction, Integer> bestScore = new HashMap<>();
         int pathCost = 0;
         Comparator<Junction> comparator = new Comparator<Junction>() {
             @Override
@@ -48,11 +46,10 @@ public class SearchAlgorithm {
                     queue.add(neighbour);
                     neighbour.setParent(current);
                     pathCost += neighbour.getWeight();
-                } else if (queue.contains(neighbour) && (neighbour.getWeight() > pathCost)) {
+                } else if (queue.contains(neighbour) && (neighbour.getWeight() < pathCost)) {
                     neighbour.setParent(current);
                     current = neighbour;
                     pathCost = neighbour.getWeight();
-
                 }
             }
 

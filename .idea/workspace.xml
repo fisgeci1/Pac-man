@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3993d4c3-ccb4-460a-8084-78e73c66154d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controll/MoveControll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/controll/GoalFinding$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/controll/GoalFinding$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/controll/GoalFinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/controll/GoalFinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/controll/PathControll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/controll/PathControll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/drawing/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/drawing/GamePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/mazeDataStructure/SearchAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/mazeDataStructure/SearchAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/model/Ghost$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/model/Ghost$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/model/Ghost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/model/Ghost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pac-Man/model/IGhost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pac-Man/model/IGhost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controll/GoalFinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controll/GoalFinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controll/MoveControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controll/MoveControll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controll/PathControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controll/PathControll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drawing/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drawing/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Dots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Dots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mazeDataStructure/Junction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mazeDataStructure/Junction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mazeDataStructure/SearchAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mazeDataStructure/SearchAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ghost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IGhost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IGhost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,25 +90,25 @@
       <screen x="1366" y="70" width="1920" height="1080" />
     </state>
     <state x="1842" y="70" width="958" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585993924293" />
-    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1586188407096">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1586194560876">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586188407096" />
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586194560876" />
     <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586018321532" />
-    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1586188407096">
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1586194560876">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586188407096" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586194560876" />
     <state width="1874" height="354" key="GridCell.Tab.0.center/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586018321532" />
-    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1586188407096">
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1586194560876">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586188407096" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586194560876" />
     <state width="1874" height="354" key="GridCell.Tab.0.left/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586018321532" />
-    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1586188407096">
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1586194560876">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586188407096" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586194560876" />
     <state width="1874" height="354" key="GridCell.Tab.0.right/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586018321532" />
     <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1586018321533">
       <screen x="1366" y="70" width="1920" height="1080" />
@@ -142,10 +135,10 @@
     </state>
     <state x="1982" y="366" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586178273347" />
     <state x="1982" y="436" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1586025174765" />
-    <state x="1983" y="136" width="676" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586182368403">
+    <state x="1983" y="136" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586192740905">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1983" y="136" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586182368403" />
+    <state x="1983" y="136" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1586192740905" />
     <state x="1983" y="206" width="676" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768/1366.70.1920.1080@1366.70.1920.1080" timestamp="1585938087344" />
     <state x="1635" y="139" width="1372" height="799" key="new project wizard" timestamp="1586178493672">
       <screen x="1366" y="0" width="1920" height="1080" />

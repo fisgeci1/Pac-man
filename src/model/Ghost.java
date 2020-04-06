@@ -79,7 +79,7 @@ public class Ghost extends Entity implements IGhost {
 
             setDiretcionOfGhost(searchAlgorithm.uniformCostSearch(getPositionOfEntity().getCurrentJunction(), goal));
             if (getPositionOfEntity().getCurrentJunction() == goal) {
-                moveType = MoveType.SCATTER;
+                moveType = MoveType.CHASEw;
                 setReturningToBase(false);
             }
         }

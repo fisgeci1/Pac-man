@@ -8,7 +8,7 @@ public class MoveControll {
     public static MoveType getMoveType() {
         int random = (int) (Math.random() * 100);
         System.out.println(random);
-        if (random > 30) {
+        if (random > 10) {
             return MoveType.CHASE;
         }
         return MoveType.SCATTER;
